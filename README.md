@@ -17,10 +17,7 @@ Projekt zawiera zmienne wyjściowe:
 
 Dodatkowo, projekt zawiera zmienne wewnętrzne, potrzebne do prawidłowego działania układu sekwencyjnego:
 
-	* q_result - wyjście zawierające wynik układu kombinacyjnego.
-	* q_status - wyjscie zawierające informacje o ewentualnych błędach lub innych informacjach.
-
-
----
+* q_result - wyjście zawierające wynik układu kombinacyjnego.
+* q_status - wyjscie zawierające informacje o ewentualnych błędach lub innych informacjach.
 
 ##  2. 
