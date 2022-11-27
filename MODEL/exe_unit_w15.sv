@@ -2,21 +2,22 @@ module exe_unit_w15(i_oper, i_argA, i_argB, i_clk, i_rsn, o_result, o_status);
 
     parameter                                   ARG_BITS = 4;  
     input logic unsigned    [1:0]               i_oper;
-    input logic signed      [ARG_BITS-1:0]     i_argA;
-    input logic signed      [ARG_BITS-1:0]     i_argB;
+    input logic signed      [ARG_BITS-1:0]      i_argA;
+    input logic signed      [ARG_BITS-1:0]      i_argB;
     input logic                                 i_clk;
     input logic                                 i_rsn;
 
-    output logic signed     [ARG_BITS-1:0]     o_result = '0;
+    output logic signed     [ARG_BITS-1:0]      o_result = '0;
     output logic unsigned   [3:0]               o_status = '0;
 
-    logic signed            [ARG_BITS-1:0]     s_result = '0;
+    logic signed            [ARG_BITS-1:0]      s_result = '0;
     logic                   [3:0]               s_status = '0;
 
     always_comb
     begin
         s_status = '0;
         s_result = '0;
+
         case (i_oper)
             0 :
             begin
@@ -51,7 +52,7 @@ module exe_unit_w15(i_oper, i_argA, i_argB, i_clk, i_rsn, o_result, o_status);
                 if (i_argB > 0 && i_argB < ARG_BITS)
                 begin
                     s_result = i_argA;
-                    s_result[i_argB] = 1;
+                    s_result[i_argB] = 0;
                     s_status = '0;
                 end
 

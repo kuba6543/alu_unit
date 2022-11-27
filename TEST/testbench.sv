@@ -1,4 +1,4 @@
-`timescale 1s/1ms
+`timescale 1ms/1us
 `define CLKSTEP     10
 `define SIMTIME     800
 `define DATASTEP    77
